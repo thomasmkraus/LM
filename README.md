@@ -10,3 +10,5 @@ Launch the file lm.html (found in LM directory) in a browser.
 
 ## Screenshots
 ![Screen snapshot](screenshots/ss-1.png)
+![Screen snapshot](screenshots/ss-2.png)
+
