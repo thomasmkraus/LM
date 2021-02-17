@@ -8,4 +8,5 @@ The true purpose of LM was actually to give TMM_desktop.js (included here) a rea
 ## Usage
 Launch the file lm.html (found in LM directory) in a browser.
 
-## Screenshot
+## Screenshots
+![Screen snapshot](screenshots/ss-1.png)
