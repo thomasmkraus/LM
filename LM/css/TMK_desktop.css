@@ -1,0 +1,323 @@
+@keyframes fadein {from { opacity: 0; } to { opacity: 100; };}
+.fadein {animation-name: fadein;animation-duration: 0.5s;}
+.fadein-fast {animation-name: fadein;animation-duration: 0.3s;}
+
+@keyframes fadeout {from { opacity: 100; } to { opacity: 0; };}
+.fadeout {animation-name: fadeout;animation-duration: 0.3s;}
+
+@keyframes shrink {
+	0% {
+		transform: scale (1);
+		-webkit-transform: scale(1);
+	}
+	100% {
+		transform:scale (0.1);
+		-webkit-transform: scale(0.1);
+	}
+}
+
+.shrink {
+	animation: shrink 0.30s;
+	transition-timing-function: ease-in;
+	}
+
+@keyframes expand {
+	0% {
+		transform: scale (0.1);
+		-webkit-transform: scale(0.1);
+	}
+	100% {
+		transform:scale (1);
+		-webkit-transform: scale(1);
+	}
+}
+
+.expand { animation: shrink 0.5s }
+
+.TMK-icon-hover {
+	padding : 8px;
+	font-size: 0.90em;
+	}
+
+.TMK-background-image {
+	width: 100%;
+	height: 100%;
+	opacity: 0.12;
+	background-image: url('console.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain; 
+}
+
+.TMK-menu-item-icon {
+	height: 20px;
+	width: 20px;
+}
+
+.TMK-icon-tag {
+	padding-top: 6px;
+	font-size: 1.00em;
+	text-align: center;
+	overflow: hidden;
+	color: black;
+	font-family: "Georgia";
+	cursor: pointer;
+}
+
+.TMK-icon-tag-32 {
+	padding-top: 5px;
+	font-size: 1.20em;
+	text-align: center;
+	overflow: hidden;
+	color: black;
+	font-family: "Georgia";
+	cursor: pointer;
+}
+
+.TMK-icon-tag-48 {
+	padding-top: 6px;
+	font-size: 2.00em;
+	text-align: center;
+	overflow: hidden;
+	color: black;
+	font-family: "Georgia";
+	cursor: pointer;
+}
+
+.TMK-icon-tag-64 {
+	padding-top: 5px;
+	font-size: 3.00em;
+	text-align: center;
+	overflow: hidden;
+	color: black;
+	font-family: "Georgia";
+	cursor: pointer;
+}
+
+.TMK-icon-tag-96 {
+	padding-top: 4px;
+	font-size: 4.80em;
+	text-align: center;
+	overflow: hidden;
+	color: black;
+	font-family: "Georgia";
+	cursor: pointer;
+}
+
+.TMK-icon-text {
+	font-size: 0.80em;
+	font-family: arial;
+	cursor: pointer;
+}
+
+.TMK-icon-active {
+	border: 2px solid black;
+	border-radius: 2px;
+	text-align: center;
+}
+
+.TMK-icon-inactive {
+	border: 2px solid rgba (0, 0, 0, 0);
+	border-radius: 2px;
+	text-align: center;
+}
+
+.TMK-window {
+	border: 1px solid LightSlateGrey;
+	font-family: arial;
+}
+
+.TMK-window:focus {
+	outline: none;
+}
+
+.TMK-window-no-border {
+	font-family: arial;
+}
+
+.TMK-window-no-border:focus {
+	outline: none;
+}
+
+.TMK-window-facia {
+	position        : absolute;
+	width           : inherit;
+	height          : inherit;
+	background-color: #DDD;
+	opacity         : 0.00;
+	visibility      : hidden;
+}
+
+/*
+ * What the backgound color should look like when you have an exclusive window
+ */
+.TMK-window-background {
+	background-color: #DDD;
+	opacity: 0.45;
+}
+
+/*
+ * What the shadow should look like when you have shadow turned on
+ */
+.TMK-window-shadow {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+/*
+ * What the header should look like
+ */
+.TMK-window-header {
+	padding    : 8px;
+	overflow   : hidden;
+	box-sizing : border-box;
+	background : #BBBBBB;
+}
+
+.TMK-window-header-active {
+	padding    : 8px;
+	overflow   : hidden;
+	box-sizing : border-box;
+	background : #C5C5C5;
+}
+
+.TMK-vertical-menu-item-header {
+	padding   : 6px 8px 6px 10px;
+	font-size : 0.95em;
+	color     : Gray;
+}
+
+.TMK-vertical-menu-item-enabled {
+	padding   : 8px 10px 8px 10px;
+	font-size : 1.00em;
+}
+
+.TMK-zebra {
+	background-color : rgba(100,150,200,0.20);
+}
+
+.TMK-vertical-menu-item-disabled {
+	padding   : 8px 10px 8px 10px;
+	font-size : 1.00em;
+	color     : lightgrey;
+}
+
+.TMK-vertical-menu-item-enabled:hover {
+	cursor       : pointer;
+	background   : #aac5f5;
+}
+
+.TMK-horizontal-menu-item-header {
+	padding   : 6px 8px 6px 10px;
+	font-size : 0.95em;
+	color     : Gray;
+}
+
+.TMK-horizontal-menu-item-enabled {
+	padding   : 8px 10px 8px 10px;
+	font-size : 1.00em;
+}
+
+.TMK-horizontal-menu-item-disabled {
+	padding   : 8px 10px 8px 10px;
+	font-size : 1.00em;
+	color     : lightgrey;
+}
+
+.TMK-horizontal-menu-item-enabled:hover {
+	cursor       : pointer;
+	background   : #aac5f5;
+}
+
+.TMK-menu-item:active {
+	cursor       : pointer;
+	background   : #99b4e4;
+}
+
+.TMK-menu-vertical-separator-top {
+	padding-top : 2px;
+	border-bottom: 1px solid lightgrey;
+	height: 1px;
+}
+
+.TMK-menu-vertical-separator-bottom {
+	padding-top : 2px;
+	height: 1px;
+}
+
+.TMK-menu-horizontal-separator {
+	border-left: 1px solid lightgrey;
+	width: 0px;
+}
+
+.TMK-mac-close {
+	width: 14px;
+	height: 14px;
+	border-radius: 7px;
+	background-color: #FC5753;
+	text-align: center;
+	cursor: pointer;
+	font-size: 1.71em;
+}
+
+.TMK-mac-close:active {
+	border: 1px solid darkred;
+}
+
+.TMK-mac-minimize {
+	width: 14px;
+	height: 14px;
+	border-radius: 7px;
+	background-color: #FDBE41;
+	text-align: center;
+}
+
+.TMK-mac-minimize:active {
+	cursor: pointer;
+	border: 1px solid darkkhaki;
+}
+
+.TMK-mac-maximize {
+	width: 14px;
+	height: 14px;
+	border-radius: 7px;
+	background-color: #34C84A;
+	text-align: center;
+}
+
+.TMK-mac-maximize:active {
+	cursor: pointer;
+	border: 1px solid darkgreen;
+}
+
+.TMK-win-close {
+	cursor: pointer;
+	font-size: 1.11em;
+	text-align: center;
+}
+
+.TMK-win-close:hover {
+	background: red;
+	color: white;
+	cursor: pointer;
+}
+
+#TMK-console {
+	font-family: courier;
+}
+
+.TMK-modal-button {
+	padding       : 8px;
+	border-radius : 7px;
+	cursor        : pointer;
+	color         : white;
+	text-align    : middle;
+    background    : linear-gradient(#4591F7, #2F7CF6);
+	border-top    : 1px solid LightSlateGrey;
+	border-left   : 1px solid LightSlateGrey;
+	border-right  : 1px solid SlateGrey;
+	border-bottom : 1px solid SlateGrey;
+}
+
+.TMK-modal-button:hover {
+    background: SlateGrey;
+}

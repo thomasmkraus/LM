@@ -248,7 +248,6 @@ function new_connection (e, obj, id)
 	new_connection_id = TMK_modal ({
 		header       : header,
 		html         : html,
-		x            : pos ? pos ["x"] : u,
 		y            : pos ? pos ["y"] : u,
 		fit          : true,
 		button_count : connection ? 2 : 3,
@@ -564,7 +563,7 @@ function get_group_menu (menu_item, all)
 	{
 		for (i = 0; i < groups.length; i++)
 		{
-			group_menu ["items"].push ({ text : groups [i]["name"],  onclick : launch_group,  arg : groups [i]["id"] });
+			group_menu ["items"].push ({ text : TMK_text_to_html (groups [i]["name"]),  onclick : launch_group,  arg : groups [i]["id"] });
 			count++;
 		}
 	}
@@ -957,7 +956,7 @@ function manage_groups (arg, xxx)
 
 			for (i = 0; i < groups.length; i++)
 			{
-				text = groups [i]["name"];
+				text = TMK_text_to_html (groups [i]["name"]);
 
 				html += "<tr " + zebra (i) + ">";
 
@@ -1028,7 +1027,7 @@ function delete_group (id)
 	{
 		html  = "<div>Are you sure you want to delete the group</div>";
 		html += "<div><br></div>";
-		html += "<div style='text-align: center;'><b>" + group ["name"] + "</b></div>";
+		html += "<div style='text-align: center;'><b>" + TMK_text_to_html (group ["name"]) + "</b></div>";
 
 		parent = TMK_get_window_obj (manage_groups_id).id;
 
@@ -1509,7 +1508,7 @@ function connection_text (connection)
 	text  = "<table cellspacing=0 cellpadding=0><tr><td>";
 	text += "<div style='width: 18px; height: 18px; border: 1px solid grey; margin-right: 12px; border-radius: 8px; background: " + TMK_make_gradient (connection ["color"]) + "'></div>";
 	text += "</td><td>";
-	text += connection ["name"];
+	text += TMK_text_to_html (connection ["name"]);
 	text += "</td></tr></table>";
 
 	return text;
@@ -1581,7 +1580,7 @@ function delete_connection (id)
 		html = "<div class=pad10>";
 		html += "<div style='text-align: center;'>Are you sure you want to delete</div>";
 		html += "<div><br></div>";
-		html += "<div style='text-align: center;'><b>" + connection ["name"] + "</b></div>";
+		html += "<div style='text-align: center;'><b>" + TMK_text_to_html (connection ["name"]) + "</b></div>";
 		html += "</div>";
 
 		parent = TMK_get_window_obj (connections_id).id;
